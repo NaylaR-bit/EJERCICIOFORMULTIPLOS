@@ -13,18 +13,19 @@ Algoritmo ejercicioFor1
 	numeroDefinirMultiplo = 0;
 	
 	
-	escribir "Ingrese el primer número de su rango expresado en números enteros:";
+	escribir "Ingrese el primer nÃºmero de su rango expresado en nÃºmeros enteros:";
 	leer numeroIngresadoMinimo;
-	Escribir  "Ingrese el último número de su rango expresado en números enteros:";
+	Escribir  "Ingrese el Ãºltimo nÃºmero de su rango expresado en nÃºmeros enteros:";
 	leer numeroIngresadoMaximo;
 	
-	Escribir  "Qué número desea utilizar? ";
+	Escribir  "QuÃ© nÃºmero desea utilizar? ";
 	leer numeroDefinirMultiplo;
 	
 	para iterador = numeroIngresadoMinimo hasta numeroIngresadoMaximo Con Paso 1 hacer
 		si iterador MOD numeroDefinirMultiplo == 0 Entonces
-			Escribir  iterador " es múltiplo de " numeroDefinirMultiplo;
-	
+			Escribir  iterador " es mÃºltiplo de " numeroDefinirMultiplo;
+	SiNo
+			Escribir "El nÃºmero " iterador " no es mÃºltiplo de " numeroDefinirMultiplo;
 		FinSi
 		
 	FinPara
